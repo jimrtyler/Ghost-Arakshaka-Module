@@ -69,7 +69,9 @@ Ghost **Windows ශක්තිමත් කිරීමේ ශ්‍රිත 1
 ### ආරක්ෂණ තක්සේරුව
 ```powershell
 # Ghost මොඩියුලය පූරණය කරන්න
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 
 # වර්තමාන ආරක්ෂණ ස්ථාවරය පරීක්ෂා කරන්න
 Get-Ghost
@@ -97,7 +99,9 @@ Set-Ghost -SMBv1 -RDP -USBStorage -Intune
 
 ### විකල්පය 1: සෘජු බාගත කිරීම (පරීක්ෂණ)
 ```powershell
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 ```
 
 ### විකල්පය 2: මොඩියුල ස්ථාපනය
